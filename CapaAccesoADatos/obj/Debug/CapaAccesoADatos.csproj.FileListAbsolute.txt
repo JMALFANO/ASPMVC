@@ -4,3 +4,6 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAcces
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.csproj.CoreCompileInputs.cache
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\bin\Debug\CapaEntidades.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\bin\Debug\CapaEntidades.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.csproj.CopyComplete

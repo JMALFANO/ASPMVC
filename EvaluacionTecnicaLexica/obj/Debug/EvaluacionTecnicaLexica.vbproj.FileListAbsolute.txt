@@ -88,3 +88,9 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\obj\Debug\Ev
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\obj\Debug\EvaluacionTecnicaLexica.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\obj\Debug\EvaluacionTecnicaLexica.xml
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\obj\Debug\EvaluacionTecnicaLexica.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaEntidades.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaNegocio.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaAccesoADatos.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaEntidades.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaNegocio.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\EvaluacionTecnicaLexica\bin\CapaAccesoADatos.pdb

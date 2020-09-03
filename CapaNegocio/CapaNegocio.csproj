@@ -46,5 +46,15 @@
     <Compile Include="admProducto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoADatos\CapaAccesoADatos.csproj">
+      <Project>{96f9e530-3581-4cc8-892e-cc18fb0e0138}</Project>
+      <Name>CapaAccesoADatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{f287303b-2149-4a71-a9c2-6994ddf779c7}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

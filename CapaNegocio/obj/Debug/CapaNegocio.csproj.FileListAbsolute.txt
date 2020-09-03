@@ -4,3 +4,8 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\obj\Debug\CapaNegocio.cs
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\bin\Debug\CapaAccesoADatos.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\bin\Debug\CapaAccesoADatos.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
