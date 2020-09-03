@@ -209,6 +209,12 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Home\Productos.vbhtml" />
+    <Content Include="Views\Home\Categorias.vbhtml" />
+    <Content Include="Views\Home\Bodegas.vbhtml" />
+    <Content Include="Views\Home\ABMCategorias.vbhtml" />
+    <Content Include="Views\Home\ABMBodegas.vbhtml" />
+    <Content Include="Views\Home\ABMProductos.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
