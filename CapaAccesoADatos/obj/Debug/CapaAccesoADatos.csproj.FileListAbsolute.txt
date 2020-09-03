@@ -1,0 +1,6 @@
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\bin\Debug\CapaAccesoADatos.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\bin\Debug\CapaAccesoADatos.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.csprojAssemblyReference.cache
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.csproj.CoreCompileInputs.cache
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaAccesoADatos\obj\Debug\CapaAccesoADatos.pdb
