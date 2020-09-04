@@ -1,3 +1,5 @@
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\VBCSCompiler.exe
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaPresentacion.dll.config
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaPresentacion.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaPresentacion.pdb
@@ -10,7 +12,6 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\csi.rsp
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -48,9 +49,10 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\System.X
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\vbc.exe
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\vbc.exe.config
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\vbc.rsp
-C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\VBCSCompiler.exe
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Antlr3.Runtime.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaEntidades.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaNegocio.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Newtonsoft.Json.dll
@@ -62,6 +64,9 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.WebP
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.WebPages.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.WebPages.Razor.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\WebGrease.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaAccesoADatos.dll
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaEntidades.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaNegocio.pdb
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.Helpers.xml
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.Mvc.xml
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.Optimization.xml
@@ -72,6 +77,7 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\System.Web.WebP
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Newtonsoft.Json.xml
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Antlr3.Runtime.pdb
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\CapaAccesoADatos.pdb
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\es\System.Web.Helpers.resources.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\es\System.Web.Mvc.resources.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaPresentacion\bin\es\System.Web.Optimization.resources.dll

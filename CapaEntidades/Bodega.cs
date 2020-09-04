@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    class Bodega
+   public class Bodega
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Nombre { get; set; }
         public Producto producto { get; set; }
         public int CantidadProducto { get; set; } 

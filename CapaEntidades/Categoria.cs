@@ -8,18 +8,7 @@ namespace CapaEntidades
 {
     public class Categoria
     {
-
-        public Categoria()
-        {
-        }
-        public Categoria(int Id, string Nombre)
-        {
-            this.Id = Id;
-            this.Nombre = Nombre;
-        }
-
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Nombre { get; set; }
-
     }
 }
