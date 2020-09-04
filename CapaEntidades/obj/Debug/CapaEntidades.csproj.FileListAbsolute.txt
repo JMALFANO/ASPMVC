@@ -3,3 +3,4 @@ C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaEntidades\bin\Debug\CapaEntidade
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaEntidades\obj\Debug\CapaEntidades.pdb
+C:\Users\juanm\source\repos\JMALFANO\ASPMVC\CapaEntidades\obj\Debug\CapaEntidades.csprojAssemblyReference.cache
