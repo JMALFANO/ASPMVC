@@ -14,14 +14,54 @@ namespace CapaPresentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
+                String accion = Request.QueryString["accion"];
+                int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
+
+
                 CargarBodega();
                 CargarCategoria();
-            }
+
+                switch (accion)
+                {
+                    case "eliminar":
+                        EliminarProducto();
+                        Response.Redirect("~/Productos.aspx");
+                        break;
+                    case "modificar":
+                        CargarProducto(id);
+                        this.btnCrearProducto.Text = "Modificar";
+                        break;
+                    case "nuevo":
+                        this.btnCrearProducto.Text = "Agregar";
+                        break;
+                }
 
             }
+        }
 
+
+        protected void CargarProducto(int id)
+        {
+            Producto producto = new admProducto().ObtenerPorId(id);
+            producto.Id = id;
+            this.TextBoxNombre.Text = producto.Nombre;
+            this.TextBoxCantidad.Text =producto.UnidadesProducto.ToString();
+            this.TextBoxDescripcion.Text = producto.Descripcion;
+            this.TextBoxPrecio.Text = producto.Precio.ToString(); 
+            this.DropDownListBodega.SelectedIndex = DropDownListBodega.Items.IndexOf(DropDownListBodega.Items.FindByValue(producto.Bodega.ToString()));
+            this.DropDownListCategoria.SelectedIndex = DropDownListCategoria.Items.IndexOf(DropDownListCategoria.Items.FindByValue(producto.Categoria.ToString()));
+
+        }
+
+
+        protected void EliminarProducto()
+        {
+            int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
+            new admProducto().Eliminar(id);
+        }
 
         protected void CargarBodega()
         {

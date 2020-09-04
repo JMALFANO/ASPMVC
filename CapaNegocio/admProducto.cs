@@ -14,14 +14,12 @@ namespace CapaNegocio
         public List<Producto> Listar()
         {
             return new dbProducto().Listar();
-        }
-
-   
-        /*
-        public Categoria ObtenerPorId(int categoriaId)
+        }    
+        
+        public Producto ObtenerPorId(int id)
         {
-            return new dbCategoria().ObtenerPorId(categoriaId);
-        }*/
+            return new dbProducto().ObtenerPorId(id);
+        }
 
         public void Guardar(Producto producto)
         {
@@ -31,6 +29,12 @@ namespace CapaNegocio
                 new dbProducto().Insertar(producto);
 
         }
+
+        public void Eliminar(int Id)
+        {
+            new dbProducto().Delete(Id);
+        }
+
 
     }
 }

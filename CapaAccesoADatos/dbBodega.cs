@@ -124,15 +124,16 @@ namespace CapaAccesoADatos
                 }
             }
         }
-        /*
+        
+
+
                 public Bodega ObtenerPorId(int id)
                 {
-                    SQL = "SELECT id_personal, Nombre, Apellido, Mail, Telefono, Contraseña, Activo, P.id_privilegio, P.privilegio_desc from Personal AS A ";
-                    SQL = SQL + "INNER JOIN Privilegio AS P ON P.id_privilegio = A.id_privilegio ";
-                    SQL = SQL + "WHERE id_personal =@id_personal ";
+                    SQL = "SELECT id_bodega, Nombre from Bodega ";
+                    SQL = SQL + "WHERE id_bodega =@id_bodega ";
                     objComando.CommandText = SQL;
-                    objComando.Parameters.AddWithValue("@id_", id);
-                    Personal Item = null;
+                    objComando.Parameters.AddWithValue("@id_bodega", id);
+                    Bodega Item = null;
                     try
                     {
                         objConexion.Open();
@@ -155,7 +156,7 @@ namespace CapaAccesoADatos
                         }
                     }
                     return Item;
-                }*/
+                }
 
 
         public List<Bodega> Listar()
@@ -211,6 +212,15 @@ namespace CapaAccesoADatos
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public Bodega Map(SqlDataReader objReader)
+
+        {
+            Bodega Item = new Bodega();
+            Item.Id = (int)objReader["id_bodega"];
+            Item.Nombre = (string)objReader["Nombre"];
+            return Item;
         }
 
     }

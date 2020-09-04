@@ -18,20 +18,9 @@
             <div class="container-fluid"> <!-- Con esto agrupo y centro el texto en el navbar-->
                 <ul class="nav navbar-nav"> <!-- Creo una lista que por defecto se acomoda a la izq -->
                     <li>
-                        <asp:HyperLink ID="HyperLinkInicio" runat="server" CssClass="navbar-brand" NavigateUrl="~/Home.aspx">Gestion de Producots</asp:HyperLink>
-                    </li>
-
-                    <li>
-                        <asp:HyperLink ID="HyperLinkAdminProductos" runat="server" CssClass="navbar-brand" NavigateUrl="~/ABMProducto.aspx">Administrar Productos</asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="HyperLinkAdminCategorias" runat="server" CssClass="navbar-brand" NavigateUrl="~/ABMCategoria.aspx">Administrar Categorias</asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="HyperLinkAdminBodegas" runat="server" CssClass="navbar-brand" NavigateUrl="~/ABMBodega.aspx">Administrar Bodegas</asp:HyperLink>
-                    </li>
-
-                </ul>
+                        <asp:HyperLink ID="HyperLinkInicio" runat="server" CssClass="navbar-brand" NavigateUrl="~/Home.aspx">Gestion de Productos</asp:HyperLink>
+                    </li>             
+               </ul>
             </div>
         </nav>
 

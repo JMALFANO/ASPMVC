@@ -20,11 +20,11 @@ namespace CapaNegocio
             return new dbBodega().ListarBodega();
         }
 
-        /*
-        public Categoria ObtenerPorId(int categoriaId)
+        
+        public Bodega ObtenerPorId(int id)
         {
-            return new dbCategoria().ObtenerPorId(categoriaId);
-        }*/
+            return new dbBodega().ObtenerPorId(id);
+        }
 
         public void Guardar(Bodega bodega)
         {
@@ -34,5 +34,11 @@ namespace CapaNegocio
                 new dbBodega().Insertar(bodega);
 
         }
+
+        public void Eliminar(int Id)
+        {
+            new dbBodega().Delete(Id);
+        }
+
     }
 }

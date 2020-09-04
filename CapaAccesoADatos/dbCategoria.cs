@@ -119,15 +119,14 @@ namespace CapaAccesoADatos
                 }
             }
         }
-/*
-        public Categoria ObtenerPorId(int id)
-        {
-            SQL = "SELECT id_personal, Nombre, Apellido, Mail, Telefono, Contraseña, Activo, P.id_privilegio, P.privilegio_desc from Personal AS A ";
-            SQL = SQL + "INNER JOIN Privilegio AS P ON P.id_privilegio = A.id_privilegio ";
-            SQL = SQL + "WHERE id_personal =@id_personal ";
-            objComando.CommandText = SQL;
-            objComando.Parameters.AddWithValue("@id_", id);
-            Personal Item = null;
+
+            public Categoria ObtenerPorId(int id)
+            {
+                SQL = "SELECT id_categoria, Nombre from Categoria ";
+                SQL = SQL + "WHERE id_categoria=@id_categoria";
+                objComando.CommandText = SQL;
+                objComando.Parameters.AddWithValue("@id_categoria", id);
+            Categoria Item = null;
             try
             {
                 objConexion.Open();
@@ -150,7 +149,7 @@ namespace CapaAccesoADatos
                 }
             }
             return Item;
-        }*/
+        }
 
 
         public List<Categoria> Listar()
@@ -206,6 +205,15 @@ namespace CapaAccesoADatos
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public Categoria Map(SqlDataReader objReader)
+
+        {
+            Categoria Item = new Categoria();
+            Item.Id = (int)objReader["id_categoria"];
+            Item.Nombre = (string)objReader["Nombre"];        
+            return Item;
         }
 
 

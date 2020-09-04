@@ -21,13 +21,18 @@ namespace CapaNegocio
             return new dbCategoria().ListarCategoria();
         }
 
+        public void Eliminar(int Id)
+        {
+           new dbCategoria().Delete(Id);
+        }
 
 
-        /*
+
+        
         public Categoria ObtenerPorId(int categoriaId)
         {
             return new dbCategoria().ObtenerPorId(categoriaId);
-        }*/
+        }
 
         public void Guardar(Categoria categoria)
         {

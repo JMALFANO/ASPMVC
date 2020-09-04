@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CapaAccesoADatos
 {
-   public class dbProducto
+   public class dbProducto : Conexion
     {
         public void Insertar(Producto producto)
         {
@@ -56,7 +56,7 @@ namespace CapaAccesoADatos
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id_producto", producto.Id);
                     cmd.Parameters.AddWithValue("@nombre", producto.Nombre);
-                    cmd.Parameters.AddWithValue("@descrpcion", producto.Descripcion);
+                    cmd.Parameters.AddWithValue("@descripcion", producto.Descripcion);
                     cmd.Parameters.AddWithValue("@precio", producto.Precio);
                     cmd.Parameters.AddWithValue("@id_categoria", producto.Categoria);
                     cmd.Parameters.AddWithValue("@id_bodega", producto.Bodega);
@@ -89,40 +89,75 @@ namespace CapaAccesoADatos
                 }
             }
         }
-        /*
-                public Producto ObtenerPorId(int id)
+
+
+        public Producto ObtenerPorId(int id)
+        {
+            Producto producto = null;
+            string connectionString = ConfigurationManager.ConnectionStrings["ASPNETMVC"].ToString();
+            using (SqlConnection cnx = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
                 {
-                    SQL = "SELECT id_personal, Nombre, Apellido, Mail, Telefono, Contraseña, Activo, P.id_privilegio, P.privilegio_desc from Personal AS A ";
-                    SQL = SQL + "INNER JOIN Privilegio AS P ON P.id_privilegio = A.id_privilegio ";
-                    SQL = SQL + "WHERE id_personal =@id_personal ";
-                    objComando.CommandText = SQL;
-                    objComando.Parameters.AddWithValue("@id_", id);
-                    Personal Item = null;
-                    try
-                    {
-                        objConexion.Open();
-                        SqlDataReader objReader = objComando.ExecuteReader();
+                    cmd.Connection = cnx;
+                    cmd.CommandText = "producto_sel_by_id";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@id_producto", id);
 
-                        if (objReader.Read())
+                    DataTable table = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(table);
+                    if (table.Rows.Count != 0)
+                    {
+                        DataRow row = table.Rows[0];
+                        producto = new Producto
+
                         {
-                            Item = this.Map(objReader);
-                        }
+                           Id = Convert.ToInt32(row["id_producto"]),
+                            Nombre = Convert.ToString(row["Nombre"]),
+                            Descripcion = Convert.ToString(row["Descripcion"]),
+                            Precio= Convert.ToInt64(row["Precio"]),
+                            Categoria = Convert.ToInt32(row["id_categoria"]),
+                            Bodega = Convert.ToInt32(row["id_bodega"]),
+                            UnidadesProducto = Convert.ToInt32(row["unidades_producto"]),
+                        };
                     }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                    finally
-                    {
-                        if (objConexion.State == System.Data.ConnectionState.Open)
-                        {
-                            objConexion.Close();
-                        }
-                    }
-                    return Item;
-                }*/
+                }
+            }
+            return producto;
+        }
 
+        /*
+        public Producto ObtenerPorId(int id)
+        {
+            SQL = "SELECT id_producto, Nombre, Descripcion, Precio, id_categoria, id_bodega, unidades_producto FROM Producto WHERE id_producto = @id_producto";
+            objComando.CommandText = SQL;
+            objComando.Parameters.AddWithValue("@id_producto", id);
+            Producto Item = null;
+            try
+            {
+                objConexion.Open();
+                SqlDataReader objReader = objComando.ExecuteReader();
 
+                if (objReader.Read())
+                {
+                    Item = this.Map(objReader);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (objConexion.State == System.Data.ConnectionState.Open)
+                {
+                    objConexion.Close();
+                }
+            }
+            return Item;
+        }
+        */
         public List<Producto> Listar()
         {
             List<Producto> cat = new List<Producto>();
@@ -147,7 +182,7 @@ namespace CapaAccesoADatos
                             Id = Convert.ToInt32(row["id_producto"]),
                             Nombre = Convert.ToString(row["nombre"]),
                             Descripcion = Convert.ToString(row["descripcion"]),
-                            Precio =Convert.ToDouble(row["precio"]),
+                            Precio = Convert.ToInt64(row["precio"]),
                             Categoria = Convert.ToInt32(row["id_categoria"]),
                             Bodega = Convert.ToInt32(row["id_bodega"]),
                             UnidadesProducto = Convert.ToInt32(row["unidades_producto"])
@@ -177,5 +212,20 @@ namespace CapaAccesoADatos
                 }
             }
         }
+
+        public Producto Map(SqlDataReader objReader)
+
+        {
+            Producto Item = new Producto();
+            Item.Id = (int)objReader["id_producto"];
+            Item.Nombre = (string)objReader["Nombre"];
+            Item.Descripcion = (string)objReader["descripcion"];
+            Item.Precio = (float)objReader["Precio"];
+            Item.Categoria = (int)objReader["id_categoria"];
+            Item.Bodega = (int)objReader["id_bodega"];
+            Item.UnidadesProducto = (int)objReader["unidades_producto"];
+            return Item;
+        }
+
     }
 }

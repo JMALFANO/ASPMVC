@@ -14,7 +14,43 @@ namespace CapaPresentacion
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                String accion = Request.QueryString["accion"];
+                int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
+
+                switch (accion)
+                {
+                    case "eliminar":
+                        EliminarBodega();
+                        Response.Redirect("~/Bodegas.aspx");
+                        break;
+                    case "modificar":
+                        CargarBodega(id);
+                        this.btnCrearBodega.Text = "Modificar";
+                        break;
+                    case "nuevo":
+                        this.btnCrearBodega.Text = "Agregar";
+                        break;
+
+                }
+            }
+
         }
+
+        protected void CargarBodega(int id)
+        {
+            Bodega bodega = new admBodega().ObtenerPorId(id);
+            bodega.Id = id;
+            this.TextBoxNombre.Text = bodega.Nombre;
+        }
+
+        protected void EliminarBodega()
+        {
+            int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
+            new admBodega().Eliminar(id);
+        }
+
         protected void btnCrearBodega_Click(object sender, EventArgs e)
         {
             String accion = Request.QueryString["accion"];
@@ -23,12 +59,13 @@ namespace CapaPresentacion
             {
                 case "modificar":
                     this.ActualizarBodega();
-        Response.Redirect("~/Bodegas.aspx");
-                    break;
+                    Response.Redirect("~/Bodegas.aspx");
+                        break;
+
                 case "nuevo":
                     this.CrearBodega();
-        Response.Redirect("~/Bodegas.aspx");
-                    break;
+                    Response.Redirect("~/Bodegas.aspx");
+                        break;
             }
         }
 

@@ -13,7 +13,7 @@ namespace CapaEntidades
         public string Descripcion { get; set; }
         public int Categoria { get; set; }
         public int Bodega { get; set; }
-        public double? Precio { get; set; }
+        public float Precio { get; set; }
 
         public int UnidadesProducto { get; set; }
 

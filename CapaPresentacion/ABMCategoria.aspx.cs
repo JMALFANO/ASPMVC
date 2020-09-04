@@ -14,9 +14,43 @@ namespace CapaPresentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                String accion = Request.QueryString["accion"];
+                int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
 
+                switch (accion)
+                {
+                    case "eliminar":
+                        this.EliminarCategoria();
+                        Response.Redirect("~/Categorias.aspx");
+                        break;
+                    case "modificar":
+                        CargarCategoria(id);
+                        this.btnCrearCategoria.Text = "Modificar";
+                        break;
+                    case "nuevo":
+                        this.btnCrearCategoria.Text = "Agregar";
+                        break;
+
+                }
+            }
         }
 
+        protected void CargarCategoria(int id)
+        {
+            Categoria categoria = new admCategoria().ObtenerPorId(id);
+            categoria.Id = id;
+            this.TextBoxNombre.Text = categoria.Nombre;
+        }
+
+
+
+        protected void EliminarCategoria()
+        {
+            int id = int.TryParse(Request.QueryString["id"], out id) ? id : 0;
+            new admCategoria().Eliminar(id);
+        }
         protected void btnCrearCategoria_Click(object sender, EventArgs e)
         {
             String accion = Request.QueryString["accion"];

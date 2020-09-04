@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="panel panel-primary">
         <div class="panel-heading">
-            ABM Usuarios
+            Listado Productos
         </div>
         <div class="panel-body">
 
